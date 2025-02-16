@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Companies - KGL</title>
+    <style>
+        body {
+            display: flex;
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            background-color: #f9f9f9;
+        }
+        .sidebar {
+            width: 250px;
+            background: #2c3e50;
+            padding: 20px;
+            height: 100vh;
+            color: white;
+            position: fixed;
+        }
+        .sidebar h3 {
+            text-align: center;
+            font-size: 22px;
+            margin-bottom: 20px;
+            color: #ecf0f1;
+        }
+        .sidebar a {
+            display: block;
+            padding: 12px;
+            text-decoration: none;
+            color: #ecf0f1;
+            margin: 8px 0;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+        .sidebar a:hover {
+            background: #1abc9c;
+        }
+        .main-content {
+            margin-left: 270px;
+            padding: 30px;
+            flex-grow: 1;
+        }
+        .table-container {
+            margin-top: 20px;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #34495e;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        th, td {
+            padding: 12px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+        th {
+            background: #1abc9c;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background: #f2f2f2;
+        }
+        tr:hover {
+            background: #e0f7fa;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <h3>Menu</h3>
+        <a href="Dashboard.html">Dashboard</a>
+        <a href="companies.html">Companies</a>
+        <a href="users.html">Users</a>
+        <a href="products.html">Products</a>
+        <a href="payments.html">Payments</a>
+        <a href="sales.html">Sales</a>
+        <a href="logout.html" style="color:#e74c3c;">Logout</a>
+    </div>
+    
+    <div class="main-content">
+        <h2>Companies</h2>
+        <div class="table-container">
+            <h3>Registered Companies</h3>
+            <table>
+                <tr>
+                    <th>#</th>
+                    <th>Company Name</th>
+                    <th>Contact Person</th>
+                    <th>Phone</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Masaka Farmers</td>
+                    <td>Kalungi Faimah</td>
+                    <td>+256 75 24683568</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Bright Producers Limited</td>
+                    <td>Birungi Bright</td>
+                    <td>+256 7064566225</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
